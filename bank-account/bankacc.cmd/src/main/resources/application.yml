@@ -1,0 +1,25 @@
+
+# spring
+server:
+  port: 1991
+  error:
+    include-message: always
+    include-binding-errors: always
+# mongodb
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: bank
+  main:
+    allow-circular-references: true
+
+
+
+# Security
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: springbankSigningKey
